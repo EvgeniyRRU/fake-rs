@@ -222,3 +222,6 @@ pub use self::ar_sa::AR_SA;
 
 mod pt_br;
 pub use self::pt_br::PT_BR;
+
+mod ru_ru;
+pub use self::ru_ru::RU_RU;
