@@ -232,3 +232,5 @@ pub use self::de_de::DE_DE;
 
 mod it_it;
 pub use self::it_it::IT_IT;
+mod ru_ru;
+pub use self::ru_ru::RU_RU;
