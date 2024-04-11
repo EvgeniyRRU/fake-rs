@@ -229,3 +229,5 @@ pub use self::pt_pt::PT_PT;
 
 mod de_de;
 pub use self::de_de::DE_DE;
+mod ru_ru;
+pub use self::ru_ru::RU_RU;
