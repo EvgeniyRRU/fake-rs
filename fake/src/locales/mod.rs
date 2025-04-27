@@ -17,6 +17,12 @@ pub trait Data {
     const NAME_SUFFIX: &'static [&'static str] = &["Jr.", "Sr.", "I", "II", "III", "IV", "V", "MD", "DDS", "PhD", "DVM"];
     const NAME_TPL: &'static str = "{FirstName} {LastName}";
     const NAME_WITH_TITLE_TPL: &'static str = "{Title} {FirstName} {LastName}";
+    const NAME_FIRST_MALE_NAME: &'static [&'static str] = &[];
+    const NAME_LAST_MALE_NAME: &'static [&'static str] = &[];
+    const NAME_MIDDLE_MALE_NAME: &'static [&'static str] = &[];
+    const NAME_FIRST_FEMALE_NAME: &'static [&'static str] = &[];
+    const NAME_LAST_FEMALE_NAME: &'static [&'static str] = &[];
+    const NAME_MIDDLE_FEMALE_NAME: &'static [&'static str] = &[];
 
     const JOB_SENIORITY: &'static [&'static str] = &["Lead", "Senior", "Junior", "Corporate", "National", "Regional", "District","Central", "Global", "International", "Chief", "Principal"];
     const JOB_FIELD: &'static [&'static str] = &["Marketing", "IT", "Accounting", "Administration", "Advertising", "Banking", "Community-Services", "Construction", "Consulting", "Design", "Education", "Farming", "Government", "Healthcare", "Hospitality", "Legal", "Manufacturing", "Mining", "Real-Estate", "Retail", "Sales", "Technology"];
