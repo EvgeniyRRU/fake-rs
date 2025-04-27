@@ -211,6 +211,7 @@ pub mod name {
     def_fakers! {
         FirstName();
         LastName();
+        MiddleName();
         Title();
         Suffix();
         Name();

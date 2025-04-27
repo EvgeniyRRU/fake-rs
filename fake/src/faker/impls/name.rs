@@ -37,6 +37,19 @@ impl<L: Data> Dummy<Title<L>> for String {
     }
 }
 
+impl<L: Data> Dummy<MiddleName<L>> for String {
+    fn dummy_with_rng<R: Rng + ?Sized>(_: &MiddleName<L>, rng: &mut R) -> Self {
+        let s = *L::NAME_MIDDLE_NAME.choose(rng).unwrap();
+        s.into()
+    }
+}
+
+impl<L: Data> Dummy<MiddleName<L>> for &str {
+    fn dummy_with_rng<R: Rng + ?Sized>(_: &MiddleName<L>, rng: &mut R) -> Self {
+        L::NAME_LAST_NAME.choose(rng).unwrap()
+    }
+}
+
 impl<L: Data> Dummy<Title<L>> for &str {
     fn dummy_with_rng<R: Rng + ?Sized>(_: &Title<L>, rng: &mut R) -> Self {
         L::NAME_TITLE.choose(rng).unwrap()
